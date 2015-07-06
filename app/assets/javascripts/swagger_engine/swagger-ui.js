@@ -4582,7 +4582,7 @@ Operation.prototype.asCurl = function (args) {
       body = obj.body;
     }
 
-    results.push('-d "' + body.replace(/"/g, '\\"') + '"');
+    results.push('-d \'' + body.replace(/'/g, '\'\'').replace(/\n/g, '\'\\\n\'').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '\'');
   }
 
   return 'curl ' + (results.join(' ')) + ' "' + obj.url + '"';
