@@ -1,0 +1,84 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+body * {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+body .signature-container *, body pre, body pre *,
+body .operation-params td:nth-child(2) input,
+body .operation-params td:nth-child(2) textarea {
+  font-family: Consolas, 'Anonymous Pro', Menlo, 'Bitstream Vera Sans Mono', 'Courier New', monospace !important;
+}
+
+.swagger-section .swagger-ui-wrap .info_title {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+
+h2 {
+  color: rgba(0,0,0,0.7);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.swagger-section .swagger-ui-wrap a {
+  color: #3FC4F3;
+}
+
+.operation {
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+
+  .http_method .toggleOperation {
+    padding: 7px 0 6px !important;
+  }
+
+  .path {
+    vertical-align: middle;
+  }
+
+  ul.options {
+    display: none !important;
+  }
+}
+
+.operation.get {
+  .heading {
+    background-color: #E8EAF6 !important;
+  }
+
+  .http_method .toggleOperation {
+    background-color: #4555A5 !important;
+  }
+}
+
+.operation.post {
+  .heading {
+    background-color: #E9F4E9 !important;
+  }
+
+  .http_method .toggleOperation {
+    background-color: #4DAF4E !important;
+  }
+}
+
+.operation.put {
+  .heading {
+    background-color: #FFF3E1 !important;
+  }
+
+  .http_method .toggleOperation {
+    background-color: #F8981D !important;
+  }
+}
+
+.operation.delete {
+  .heading {
+    background-color: #FDEBEE !important;
+  }
+
+  .http_method .toggleOperation {
+    background-color: #EF4438 !important;
+  }
+}
